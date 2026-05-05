@@ -1,6 +1,6 @@
 # HP Inc — Inventory & Billing Automation
 
-> ETL pipeline for automatic WMS↔ERP inventory reconciliation and monthly LSP billing automation. Built and deployed in production for HP Inc Chile's logistics operation.
+> ETL pipeline for automatic WMS↔ERP inventory reconciliation and monthly LSP billing automation. Built and deployed in production for a Fortune 500 Technology Leader Chile's logistics operation.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -20,7 +20,7 @@
 
 ## Context
 
-HP Inc outsources its logistics operation to a 3PL provider (DHL). Every month, the LSP invoices for services rendered: warehousing, reworks (product conditioning for MTO/BTO orders), and special operations. In parallel, the LSP's inventory system (WMS) and HP's ERP (SAP S/4) must stay permanently reconciled.
+A Fortune 500 Technology Leader outsources its logistics operation to a 3PL provider (Global Logistics Provider)). Every month, the LSP invoices for services rendered: warehousing, reworks (product conditioning for MTO/BTO orders), and special operations. In parallel, the LSP's inventory system (WMS) and Company's ERP (SAP S/4) must stay permanently reconciled.
 
 Before these automations, the process required manually downloading reports from three different systems, cross-referencing them in Excel, and generating invoices — a 3-day process that also produced frequent billing errors requiring corrections.
 
@@ -59,8 +59,8 @@ Converts `.html` files (reports exported from legacy WMS systems) to clean `.xls
 ## Setup
 
 ```bash
-git clone https://github.com/your-username/hp-inventory-billing
-cd hp-inventory-billing
+git clone https://github.com/your-username/inventory-billing
+cd inventory-billing
 pip install -r requirements.txt
 ```
 
@@ -97,6 +97,6 @@ lxml
 
 ## Author
 
-**Vicente Arasaya**  
-Supply Chain & Operations Automation · HP Inc Chile  
-[linkedin.com/in/your-profile](https://linkedin.com/in/your-profile) · [github.com/your-username](https://github.com/your-username)
+**Jose Miguel Varas**  
+Supply Chain & Operations Automation
+[linkedin.com/in/your-profile](https://linkedin.com/in/jmvaras) · [github.com/your-username](https://github.com/CoteeMiguel)

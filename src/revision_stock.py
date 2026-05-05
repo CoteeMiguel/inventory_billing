@@ -39,10 +39,8 @@ class DlvGeneration:
         ListaBloqueoDlv = workbook.loc[workbook['Block Delivery'] == 'Yes']['User Status']
         ListaBloqueos = list(ListaBloqueoDlv)
         Lista = ListaBloqueoDlv.reset_index().drop(columns="index")
-        #Lista.to_excel(r'C:\Users\varasaya\Desktop\ModeloGeneracionDlv\ListaCharlie.xlsx')
 
         #preparar lista de OC
-        #backlog = pd.read_excel(r"C:\Users\varasaya\Desktop\ModeloGeneracionDlv\osreport_BacklogS4CLUYPY-TEST_2021-02-18_1507.xls")
         stockoc["UltimaBloqueo"] = stockoc.apply(lambda row: BloqueoDlv(row['ItemStati']),axis=1)
         stockoc = stockoc[stockoc.UltimaBloqueo==True]
         stockoc = stockoc.groupby('Material').sum()['ConfirmedQty']
